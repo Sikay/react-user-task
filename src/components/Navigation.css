@@ -1,0 +1,57 @@
+.Menu-logo {
+  max-height: 80px;
+  pointer-events: none;
+  flex: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Menu-logo {
+    animation: Menu-logo-spin infinite 20s linear;
+  }
+}
+
+.Menu {
+  background-color: #282c34;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Menu-react {
+  flex: 2;
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+
+.Menu-react a {
+  color: #61dafb;
+}
+
+.Menu-link {
+  flex: 12;
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+}
+
+.Menu-link a {
+  color: #ffffff;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes Menu-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
