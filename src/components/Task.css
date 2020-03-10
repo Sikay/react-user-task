@@ -1,0 +1,43 @@
+.task {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.task > div {
+  border-radius: 5px;
+}
+
+.task-card {
+  display: grid;
+  grid-template-rows: 60px 50px;
+  grid-template-areas:
+    "header       header"
+    "priority     responsible"
+    "description  description";
+  background: white;
+}
+
+.task-card__header {
+  grid-area: header;
+  background: rgb(182, 204, 216);
+  border-bottom: 1px solid rgb(117, 166, 189);
+  border-radius: 5px 5px 0 0;
+}
+
+.task-card__body {
+  grid-area: description;
+  padding: 0 15px 0 15px;
+  text-align: justify;
+}
+
+.task-card__priority {
+  grid-area: priority;
+  align-self: center;
+}
+
+.task-card__priority span {
+  background: red;
+  color: white;
+}

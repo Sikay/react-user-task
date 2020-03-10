@@ -1,0 +1,9 @@
+.vertical-form {
+  display: flex;
+  flex-direction: row;
+  border: black 1px solid;
+}
+
+.vertical-form div {
+  flex: 1;
+}

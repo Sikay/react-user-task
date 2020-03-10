@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./Navigation.css";
+import { tasks } from "./tasks.json";
 
 class Navigation extends Component {
   render() {
@@ -15,6 +16,7 @@ class Navigation extends Component {
           >
             Task
           </a>
+          <span className="badge">{tasks.length}</span>
         </div>
         <div className="Menu-react">
           <a

@@ -35,12 +35,19 @@
   flex: 12;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   color: #ffffff;
 }
 
 .Menu-link a {
   color: #ffffff;
   padding: 20px;
+}
+
+.Menu-link span {
+  background: white;
+  color: black;
+  max-height: 22px;
 }
 
 a {
